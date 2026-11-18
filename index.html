@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سوقنا - الرئيسية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>سوقنا 🛒</h1>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="products.html">المنتجات</a>
+            <a href="cart.html">السلة</a>
+            <a href="login.html">تسجيل الدخول</a>
+        </nav>
+    </header>
+
+    <!-- الواجهة الترحيبية (Hero Section) -->
+    <section class="hero">
+        <h2>مرحباً بك في متجر سوقنا ✨</h2>
+        <p>وجهتك الأولى لأفضل الإلكترونيات، الإكسسوارات، والعطور الفاخرة في السودان بأفضل الأسعار وتوصيل سريع لباب بيتك.</p>
+        <a href="products.html" class="hero-btn">تصفح كل المنتجات 🛍️</a>
+    </section>
+
+    <!-- مميزات المتجر -->
+    <section class="features">
+        <div class="feature-box">
+            <h3>🚚 توصيل سريع</h3>
+            <p>نوصّل طلبك وين ما كنت بأسرع وقت وأعلى أمان.</p>
+        </div>
+        <div class="feature-box">
+            <h3>💎 جودة مضمونة</h3>
+            <p>منتجات مختارة بعناية وبأعلى معايير الجودة.</p>
+        </div>
+        <div class="feature-box">
+            <h3>💳 دفع مرن</h3>
+            <p>خيارات دفع سهلة ومريحة تناسبك.</p>
+        </div>
+    </section>
+
+    <!-- عروض اليوم / منتجات مميزة -->
+    <section>
+        <h2>🔥 الأكثر مبيعاً وعروض اليوم</h2>
+        <div class="products-grid">
+            <div class="product">
+                <h3>ساعة ذكية فاخرة</h3>
+                <p>السعر: 45,000 جنيه</p>
+                <button onclick="addToCart('ساعة ذكية فاخرة', 45000)">أضف للسلة</button>
+            </div>
+
+            <div class="product">
+                <h3>سماعة بلوتوث لاسلكية</h3>
+                <p>السعر: 25,000 جنيه</p>
+                <button onclick="addToCart('سماعة بلوتوث لاسلكية', 25000)">أضف للسلة</button>
+            </div>
+
+            <div class="product">
+                <h3>عطر رجالي فاخر (100 مل)</h3>
+                <p>السعر: 50,000 جنيه</p>
+                <button onclick="addToCart('عطر رجالي فاخر (100 مل)', 50000)">أضف للسلة</button>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: #0f172a; color: #94a3b8; text-align: center; padding: 20px; margin-top: 40px;">
+        <p>جميع الحقوق محفوظة لمتجر سوقنا 🛒 © 2026</p>
+    </footer>
+
+    <!-- ربط الجافاسكريبت عشان أزرار العروض تشتغل -->
+    <script src="script.js"></script>
+</body>
+</html>

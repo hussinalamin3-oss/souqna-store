@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سوقنا - سلة الشراء</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>سوقنا 🛒</h1>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="products.html">المنتجات</a>
+            <a href="cart.html">السلة</a>
+            <a href="login.html" id="user-nav">تسجيل الدخول</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>سلة المشتريات</h2>
+        
+        <div class="cart-container">
+            <div id="cart-items"></div>
+
+            <!-- صندوق الدفع الوهمي وإتمام الطلب -->
+            <div style="background-color: #ffffff; border-radius: 12px; padding: 25px; margin-top: 30px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); border: 1px solid #e2e8f0;">
+                <h3 style="margin-bottom: 20px; color: #1e293b; text-align: center;">إجمالي الطلب: <span id="cart-total" style="color: #f59e0b;">0</span> <span style="color: #f59e0b;">جنيه</span></h3>
+                
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; font-weight: bold;">عنوان التوصيل:</label>
+                    <input type="text" id="delivery-address" placeholder="المدينة - الحي (مثلاً: الخرطوم - الرياض)" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px;">
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; margin-bottom: 5px; font-weight: bold;">طريقة الدفع:</label>
+                    <select id="payment-method" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px; background: white;">
+                        <option value="بنكك (بنك الخرطوم)">تطبيق بنكك (بنك الخرطوم)</option>
+                        <option value="فوري (بنك فيصل)">تطبيق فوري (بنك فيصل)</option>
+                        <option value="الدفع عند الاستلام">الدفع كاش عند الاستلام</option>
+                    </select>
+                </div>
+
+                <button onclick="checkout()" style="width: 100%; padding: 12px; font-size: 18px;">تأكيد الدفع وإتمام الشراء 💳</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
